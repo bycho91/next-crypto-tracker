@@ -2,7 +2,7 @@
 
 const Coin = ({data}) => {
 	return (
-		<div className='w-full max-w-[1080px] grid grid-cols-4 border-b-[1px] border-gray-400 h-[80px] flex items-center hover:bg-red-100'>
+		<div className='w-full max-w-[1080px] grid grid-cols-4 border-b-[1px] border-gray-400 h-[80px] flex items-center hover:bg-gray-200'>
 			<div className="name flex items-center">
 				<img src={data.image} alt={data.name} className='w-[30px] h-[30px] mr-4'/>
 				<h1 className='text-2xl'>{data.name}</h1>
