@@ -12,7 +12,7 @@ const CoinList = ({coins}) => {
 
 			{/* coins */}
 			{coins.map(coin => (
-				<Coin data={coin}/>
+				<Coin key={coin.id} data={coin}/>
 			))}
 		</div>
 	)
