@@ -7,14 +7,14 @@ const Target = ({ coin }) => {
 
   return (
     <Layout>
-      <div className="container w-full max-w-[1440px] mx-auto mt-[100px]">
+      <div className="container w-4/5 max-w-[1440px] mx-auto mt-[100px]">
         <div className="left w-2/5 flex flex-col">
-          <div className="flex flex-col space-y-5 mb-[50px]">
+          <div className="flex flex-col space-y-3 mb-[50px]">
             <div className="info flex items-center space-x-2">
               <img
                 src={coin.image.large}
                 alt={coin.id}
-                className="w-[80px] h-[80px]"
+                className="w-[60px] h-[60px]"
               />
               <h1 className="text-3xl font-bold">{coin.name}</h1>
               <div className="rounded-md px-2 bg-[#c06014]">

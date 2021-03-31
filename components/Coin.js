@@ -4,7 +4,7 @@ const Coin = ({ data }) => {
   return (
     <Link href="/coin/[id]" as={`/coin/${data.id}`}>
       <a>
-        <div className="w-full max-w-[1440px] border-b-[1px] border-gray-400 h-[80px] flex items-center hover:bg-gray-200 justify-between">
+        <div className="w-full max-w-[1440px] rounded-lg shadow-lg h-[80px] flex items-center hover:bg-gray-200 justify-between mb-2 px-4">
           <div className="name flex items-center w-1/4">
             <img
               src={data.image}
