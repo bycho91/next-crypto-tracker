@@ -7,7 +7,7 @@ const Target = ({ coin }) => {
 
   return (
     <Layout>
-      <div className="container w-4/5 max-w-[1440px] mx-auto mt-[100px]">
+      <div className="container w-4/5 max-w-[1440px] mx-auto mt-[100px] flex">
         <div className="left w-2/5 flex flex-col">
           <div className="flex flex-col space-y-3 mb-[50px]">
             <div className="info flex items-center space-x-2">
@@ -77,9 +77,8 @@ const Target = ({ coin }) => {
             </a>
             {/* COMMUNITY */}
             <div className="flex flex-col space-y-2 relative">
-              <a
-                href="#"
-                className="bg-[#536162] px-3 py-1 flex items-center rounded-lg text-white space-x-1"
+              <div
+                className="cursor-pointer bg-[#536162] px-3 py-1 flex items-center rounded-lg text-white space-x-1"
                 onClick={() => setOpen(!open)}
               >
                 <svg
@@ -111,7 +110,7 @@ const Target = ({ coin }) => {
                     d="M19 9l-7 7-7-7"
                   />
                 </svg>
-              </a>
+              </div>
 
               {/* MODAL */}
               {open && (
@@ -191,7 +190,13 @@ const Target = ({ coin }) => {
           </div>
         </div>
 
-        <div className="right w-3/5"></div>
+        <div className="right w-3/5">
+					<h4 className="text-md text-gray-500">{`Current Price (${coin.symbol.toUpperCase()})`}</h4>
+					<div className="flex space-x-2">
+						<h1 className='text-4xl font-bold'>${parseFloat(coin.market_data.current_price.usd).toLocaleString()}</h1>
+						<p></p>					
+					</div>
+				</div>
       </div>
     </Layout>
   );
