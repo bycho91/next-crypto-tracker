@@ -16,7 +16,7 @@ const Coin = ({ data }) => {
           </div>
 
           <div className="price text-right w-1/4 text-xl">
-            ${data.current_price.toLocaleString()}
+            ${((parseFloat(data.current_price)).toFixed(2)).toLocaleString()}
           </div>
 
           <div className="percentChange text-right w-1/4 text-xl">

@@ -7,7 +7,7 @@ const Navbar = () => {
           <Link href="/">
             <a>
               <h1 className="text-5xl text-[#424642] tracking-tighter font-bold">
-                Crypto<span className="text-[#c06014] font-normal">DB</span>
+                CryptoD<span className="text-[#F7931A]">₿</span>
               </h1>
             </a>
           </Link>
